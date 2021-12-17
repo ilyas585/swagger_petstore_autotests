@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "photoUrls": {
+      "type": "array"
+    },
+    "tags": {
+      "type": "array"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["available", "pending", "sold"]
+    }
+  },
+  "required": [
+    "name",
+    "photoUrls"
+  ]
+}
